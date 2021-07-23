@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <!-- mustache语法不能使用在属性, 只能使用在content中 -->
+  <img v-bind:src="imgURL"><br>
+  <a :href="aHref">安全客户端</a>
+  <h2>{{message}}</h2>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: '你好啊',
+      imgURL: 'http://128.32.12.66:81/res/logo.png',
+      aHref: 'http://128.192.214.34/Citrix/XenDesktop/site/default.aspx'
+    }
+  })
+</script>
+
+</body>
+</html>

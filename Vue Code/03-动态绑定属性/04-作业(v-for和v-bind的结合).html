@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+</head>
+<body>
+
+<!--作业需求: 点击列表中的哪一项那么该项的文字变为红色-->
+<div id="app">
+  <ul>
+    <!--<li v-for="movie in movies">{{movie}}</li>-->
+    <li v-for="(movie, index) in movies">{{index}} -> {{movie}}</li>
+  </ul>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      movies: ['星球大战', '作家的谎言', '绿皮书', '海贼王', '进击的巨人']
+    }
+  })
+</script>
+
+</body>
+</html>

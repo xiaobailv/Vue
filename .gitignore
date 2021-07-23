@@ -1,0 +1,6 @@
+# Project exclude paths
+/Vue-v2/01-webpack的使用/02-webpack的配置/node_modules/
+/Vue-v2/01-webpack的使用/03-webpack的loader/node_modules/
+/Vue-v2/01-webpack的使用/04-webpack配置vue/node_modules/
+/Vue-v2/01-webpack的使用/05-webpack配置plugin/node_modules/
+/Vue-v2/01-webpack的使用/06-webpack配置分离/node_modules/

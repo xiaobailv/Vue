@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <h2>{{url}}</h2>
+  <h2 v-html="url"></h2>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: '你好啊',
+      url: '<a href="http://128.192.214.34/Citrix/XenDesktop/site/default.aspx">安全客户端</a>'
+    }
+  })
+</script>
+
+</body>
+</html>
